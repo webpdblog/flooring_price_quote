@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flooring_price_quote/pyeong_calculator_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,10 +50,10 @@ class HomeScreen extends StatelessWidget {
                 child: _buildMenuButton(
                   context,
                   icon: Icons.transform,
-                  label: '평수 변환기',
+                  label: '평수 계산기',
                   color: Colors.teal[400]!, // 두 번째 버튼 색상
                   onPressed: () {
-                    // TODO: Navigate to Pyeong Converter page
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const PyeongCalculatorScreen()));
                   },
                 ),
               ),
